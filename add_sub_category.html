@@ -1,0 +1,29 @@
+
+    <select id="category">
+       
+    </select>
+
+
+<input type="text" placeholder="Subcategory name here"/> <br><br>
+
+<input type="button" value="submit"/>
+
+
+
+<script type="text/javascript">
+
+    let val = JSON.parse(localStorage.getItem('categorytbl'));
+    let select = "";
+    select += "<option>---select category---</option>";
+    for(let i in val){
+        select += `
+                    <option>${val[i].category}</option>
+            `
+    }
+    
+    document.getElementById('category').innerHTML = select;
+
+   
+
+
+</script>

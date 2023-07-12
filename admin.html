@@ -1,0 +1,16 @@
+<h1>Welcome to <span id="user"></span></h1>
+
+<button class="btn btn-danger" onclick="Logout()">Logout</button>
+
+<script src="./checkUserLogin.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+    // document.getElementById('user').innerHTML = userlogin.name;
+    
+
+    function Logout(){
+        localStorage.removeItem('checkUserLogin');
+        window.location.href = "index.html";
+    }
+
+</script>
